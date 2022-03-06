@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>trần văn hoàn</h1>
+
+
+<script>
+    alert("Tinh diem trung binh");
+
+    let nhapDiemVatLy;
+    let nhapDiemHoaHoc;
+    let nhapDiemSinhHoc;
+    nhapDiemVatLy = prompt("Nhap diem Vat Ly: ");
+    nhapDiemHoaHoc = prompt("Nhap diem Hoa Hoc: ");
+    nhapDiemSinhHoc = prompt("Nhap diem Sinh Hoc: ");
+
+    let diemVatLy = parseFloat(nhapDiemVatLy);
+    let diemHoaHoc = parseFloat(nhapDiemHoaHoc);
+    let diemSinhHoc = parseFloat(nhapDiemSinhHoc);
+
+    let diemTrungBinh;
+    diemTrungBinh = (diemHoaHoc + diemVatLy + diemSinhHoc)/3;
+    let diemTong
+    diemTong = diemHoaHoc + diemVatLy + diemSinhHoc;
+
+    document.write("Diem Vat Ly: " + diemVatLy);
+    document.write("<br>");
+    document.write("Chieu Hoc Hoc: " + diemHoaHoc);
+    document.write("<br>");
+    document.write("Chieu Sinh Hoc: " + diemSinhHoc);
+    document.write("<br>");
+    document.write("Diem Trung Binh: " + diemTrungBinh);
+    document.write("<br>");
+    document.write("Diem Tong: " + diemTong);
+</script>
+</body>
+</html>
