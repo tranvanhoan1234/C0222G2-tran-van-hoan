@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="number" id="number1">
+<input type="number" id="number2"><br> <br>
+
+<button type="submit" onclick="addtion()">addtion(+)</button>
+<button type="submit" onclick="suptraction()">suptrac(-)</button>
+<button type="submit" onclick="multiplication()">multiplication(*)</button>
+<button type="submit" onclick="division()">divition(/)</button>
+
+<p id="ketqua">ketqua</p>
+<script>
+    function addtion() {
+        let number1 = document.getElementById('number1').value;
+        let number2 = document.getElementById('number2').value;
+        number1 = parseInt(number1)
+        number2 = parseInt(number2)
+        let Sum = number1 + number2;
+        document.getElementById("ketqua").innerText = Sum;
+
+    }
+   function  suptraction() {
+        let number1 = document.getElementById('number1').value;
+        let number2 = document.getElementById('number2').value;
+        number1 = parseInt(number1)
+        number2 = parseInt(number2)
+        let Sum = number1 - number2;
+        document.getElementById("ketqua").innerText = Sum;
+
+    }
+   function multiplication() {
+        let number1 = document.getElementById('number1').value;
+        let number2 = document.getElementById('number2').value;
+        number1 = parseInt(number1)
+        number2 = parseInt(number2)
+        let Sum = number1 * number2;
+        document.getElementById("ketqua").innerText = Sum;
+
+    }
+   function division() {
+        let number1 = document.getElementById('number1').value;
+        let number2 = document.getElementById('number2').value;
+        number1 = parseInt(number1)
+        number2 = parseInt(number2)
+        let Sum = number1 / number2;
+        document.getElementById("ketqua").innerText = Sum;
+
+    }
+
+
+</script>
+</body>
+</html>

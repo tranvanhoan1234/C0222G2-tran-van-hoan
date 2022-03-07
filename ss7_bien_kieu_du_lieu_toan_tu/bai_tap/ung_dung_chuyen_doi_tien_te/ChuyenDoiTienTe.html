@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title
-
+    <title>Title</title>
 
 
 </head>
 <body>
 
 <p>amount</p>
-<input type="number" >
+<input type="number" id="tien">
 <span>from currency</span>
-<select name="usa" >
- <option>Việt Nam</option>
+<select name="usa">
+    <option>Việt Nam</option>
     <option>usa</option>
 
 </select>
@@ -22,28 +21,18 @@
     <option>Việt Nam</option>
 
 </select>
-<button type="submit" onclick="convent" >convent</button>
+<button type="submit" onclick="convent()">conven</button>
 <br><br>
-    <input type="text" id="result" >tien</input>
+<p id="result"></p>
 
 <script>
-    function  convent() {
+    function convent() {
+        let A = document.getElementById("tien").value;
+        let ketQua = 23000 * A;
+        document.getElementById("result").innerText = ketQua;
 
-        let usa = 23000;
-        let vietnam=1;
-let result =usa * vietnam;
-let my=parseFloat(usa);
-        let viet= parseFloat(vietnam) ;
-
-
-
-        // document.getElementById(  result  ).innerHTML;
-        document.getElementById(convent(result)) ;
 
     }
-
-
-
 
 
 </script>
