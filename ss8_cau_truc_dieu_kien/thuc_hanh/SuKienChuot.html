@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <img id="myImage" src="https://icons.iconarchive.com/icons/icons-land/metro-raster-sport/96/Soccer-Ball-icon.png">
+    <p>Click button below to move the image to right</p>
+    <input type="button" value="Click Me" />
+    <input type="button" value="Click Me" onclick="moveRight();" />
+    <script>
+        let imgObj = null;
+
+        imgObj = document.getElementById('myImage');
+        function init() {
+            imgObj = document.getElementById('myImage');
+            imgObj.style.position = 'relative';
+            imgObj.style.left = '0px';
+        }
+        function moveRight() {
+            imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+        }
+        window.onload = init;
+
+
+    </script>
+</form>
+</body>
+</html>
