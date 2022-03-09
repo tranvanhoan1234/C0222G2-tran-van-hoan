@@ -9,14 +9,14 @@
 <input type="number" id="number1">
 <input type="number" id="number2"><br> <br>
 
-<button type="submit" onclick="addtion()">addtion(+)</button>
-<button type="submit" onclick="suptraction()">suptrac(-)</button>
-<button type="submit" onclick="multiplication()">multiplication(*)</button>
-<button type="submit" onclick="division()">divition(/)</button>
+<button type="button" onclick="add()">addtion(+)</button>
+<button type="button" onclick="subtraction()">suptrac(-)</button>
+<button type="button" onclick="multiplication()">multiplication(*)</button>
+<button type="button" onclick="division()">divition(/)</button>
 
 <p id="ketqua">ketqua</p>
 <script>
-    function addtion() {
+    function add() {
         let number1 = document.getElementById('number1').value;
         let number2 = document.getElementById('number2').value;
         number1 = parseInt(number1)
@@ -25,7 +25,7 @@
         document.getElementById("ketqua").innerText = Sum;
 
     }
-   function  suptraction() {
+   function  subtraction() {
         let number1 = document.getElementById('number1').value;
         let number2 = document.getElementById('number2').value;
         number1 = parseInt(number1)

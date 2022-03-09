@@ -9,29 +9,39 @@
 <body>
 
 <p>amount</p>
-<input type="number" id="tien">
+<input type="number" id="from">
 <span>from currency</span>
-<select name="usa">
-    <option>Việt Nam</option>
-    <option>usa</option>
+
+<select id="viet">
+    <option value="vietnam">Việt Nam</option>
+    <option value="usa">usa</option>
 
 </select>
-<select>
-    <option>usa</option>
-    <option>Việt Nam</option>
+
+<select id="my" >
+    <option value="usa">usa</option>
+    <option value="vietnam">Việt Nam</option>
 
 </select>
-<button type="submit" onclick="convent()">conven</button>
+<button type="button" onclick="convertCurrency()">conven</button>
 <br><br>
 <p id="result"></p>
 
+
 <script>
-    function convent() {
-        let A = document.getElementById("tien").value;
-        let ketQua = 23000 * A;
-        document.getElementById("result").innerText = ketQua;
+    function convertCurrency() {
+        let from = document.getElementById("from").value;
+        let my = document.getElementById("my").value;
+        let viet = document.getElementById("viet").value;
 
+        if (my == 'vietnam' && viet == 'usa') {
+            document.getElementById('result').innerText = from * 23000;
 
+        } else if (viet == 'vietnam' && my == 'usa') {
+            document.getElementById('result').innerText = from / 23000;
+        } else {
+            document.getElementById('result').innerText = from;
+        }
     }
 
 
