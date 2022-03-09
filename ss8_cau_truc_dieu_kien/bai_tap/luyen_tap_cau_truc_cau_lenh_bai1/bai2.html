@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<input type="text" id="nhaptuoi">
+<button type="button" onclick="chon()">ketqua</button>
+<p >
+<input type="text" id="ketqua" value="" >
+</p>
+<script>
+
+
+    function chon() {
+        let tuoi = parseInt(document.getElementById('nhaptuoi').value);
+        if (tuoi >=16) {
+            document.getElementById('ketqua').value =   'đủ điều kiên nhập hoc';
+        } else {
+            tuoi < 16;
+            document.getElementById('ketqua').value =  'khong đủ điều kiện nhập hoc';
+
+        }
+
+    }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<label>hóa đơn</label> <input type="text" id="hoadon" value="">
+<br><br>
+<p><input type="text" id="hoaHong" value=""> hoahong</p>
+<button type="button" onclick="tien()" value=""> tinh</button>
+<br><br>
+
+<script>
+    function tien() {
+        let hoaDon = parseInt(document.getElementById('hoadon').value);
+        if (hoaDon > 200 ) {
+            document.getElementById('hoaHong').value = hoaDon * 0.2 +'nghìn'
+
+        }
+
+    }
+
+
+</script>
+</body>
+</html>
