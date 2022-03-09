@@ -5,15 +5,23 @@
     <title>Title</title>
 </head>
 <body>
- <label>cước điện thoại</label>  <input type="text" id="nhap">
-<button type="button" onclick="sumit()" >sumit</button>
+<label>số phút</label> <input type="text" id="nhap">
+<button type="button" onclick="sumit()">sumit</button>
+<p id="phut">tien</p>
 <script>
-    function  sumit() {
+    function sumit() {
+        let phut = parseFloat(document.getElementById('nhap').value);
+        if (phut == 1) {
+            document.getElementById('phut').innerText = phut * 2000 + 'vnđ';
 
+
+        } else {
+            document.getElementById('phut').innerText = 'không tính phí';
+
+        }
 
 
     }
-
 
 
 </script>
