@@ -7,21 +7,21 @@
 <body>
 
 
-<input type="text" id="nhaptuoi">
+<input type="text" id="nhapTuoi">
 <button type="button" onclick="chon()">ketqua</button>
 <p >
-<input type="text" id="ketqua" value="" >
+<input type="text" id="ketQua" value="" >
 </p>
 <script>
 
 
     function chon() {
-        let tuoi = parseInt(document.getElementById('nhaptuoi').value);
+        let tuoi = parseInt(document.getElementById('nhapTuoi').value);
         if (tuoi >=16) {
-            document.getElementById('ketqua').value =   'đủ điều kiên nhập hoc';
+            document.getElementById('ketQua').value =   'đủ điều kiên nhập hoc';
         } else {
             tuoi < 16;
-            document.getElementById('ketqua').value =  'khong đủ điều kiện nhập hoc';
+            document.getElementById('ketQua').value =  'khong đủ điều kiện nhập hoc';
 
         }
 

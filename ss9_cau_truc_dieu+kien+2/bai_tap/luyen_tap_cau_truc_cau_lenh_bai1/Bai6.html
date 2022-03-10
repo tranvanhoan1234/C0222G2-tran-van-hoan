@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<label>hóa đơn</label> <input type="text" id="hoadon" value="">
+<label>hóa đơn</label> <input type="text" id="hoaDon" value="">
 <br><br>
 <p><input type="text" id="hoaHong" value=""> hoahong</p>
 <button type="button" onclick="tien()" value=""> tinh</button>
@@ -14,8 +14,8 @@
 
 <script>
     function tien() {
-        let hoaDon = parseInt(document.getElementById('hoadon').value);
-        if (hoaDon > 200 ) {
+        let hoaDon = parseInt(document.getElementById('hoaDon').value);
+        if (hoaDon => 200 ) {
             document.getElementById('hoaHong').value = hoaDon * 0.2 +'nghìn'
 
         }

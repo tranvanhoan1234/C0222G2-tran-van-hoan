@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p style="color: blue"><i>bảng tính thuế</i></p>
+<p> thu nhập tháng <input type="text" id="thang"> vnđ</p>
+<button type="button" onclick="tinh()">tinh</button>
+<input type="text" id="phanTram">vnđ
+<script>
+    function tinh() {
+        let tienThang = parseFloat(document.getElementById('thang').value);
+        let phanTram = parseFloat(document.getElementById('thang').value);
+        if (tienThang >10000) {
+            document.getElementById("phanTram").value = tienThang * 0.1
+
+        } else if (tienThang > 5000 ) {
+
+            document.getElementById('phanTram').value = tienThang * 0.05
+
+        } else {
+            document.getElementById('phanTram').value = 'khong tính %'
+
+        }
+
+    }
+
+
+</script>
+</body>
+</html>

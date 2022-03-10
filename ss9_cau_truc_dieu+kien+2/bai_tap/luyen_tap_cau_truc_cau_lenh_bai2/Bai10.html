@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p style="color: red"> bẳng tính tiền điện</p>
+
+<label>KWH</label><input type="text" id="soDien">
+<button type="button" onclick="tinhTien()">tinh</button>
+<label>số tiền điện</label> <input type="text" id="soTien"><label>vnđ</label>
+
+
+<script>
+    function tinhTien() {
+
+        let tienDien = parseFloat(document.getElementById('soDien').value);
+        let soDien = parseFloat(document.getElementById('soDien').value);
+
+        if (soDien > 0 && soDien <= 50 * 1500) {
+
+        } else if (soDien < 100 * 1700) {
+
+        } else if (soDien < 150 * 2000) {
+document.getElementById('soTien').value
+        } else if (soDien > 150) {
+
+            document.getElementById('soTien').value = 'bị phạt '
+        } else {
+            document.getElementById('soTien').value = 'không tính                                                                                             j'
+
+
+        }
+
+
+    }
+
+
+</script>
+</body>
+</html>

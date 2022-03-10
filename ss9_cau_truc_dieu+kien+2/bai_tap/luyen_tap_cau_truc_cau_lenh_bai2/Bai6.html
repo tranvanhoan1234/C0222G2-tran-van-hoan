@@ -5,45 +5,24 @@
     <title>Title</title>
 </head>
 <body>
-<form>
-    Nhập số a: <input type="text" id="a" value=""/> <br/>
-    Nhập số b: <input type="text" id="b" value=""/> <br/>
-    <span id="result"></span> <br/>
-    <input type="button" id="giaiBtn" value="Tìm nghiệm"/>
-</form>
-
 <script>
-    var button = document.getElementById('giaiBtn');
-    giaiBtn.onclick = function(){
-        let a = document.getElementById('a').value;
-        let b = document.getElementById('b').value;
 
-        if (a == "" || b == ""){
-            alert("Vui lòng nhập dữ liệu");
-        }
-        else {
-            a = Number(a);
-            b = Number(b);
-            giai_pt_bac_nhat(a, b);
-        }
-    };
+    let a = parseFloat(prompt('nhap a'));
+    let b = parseFloat(prompt('nhap b'));
+if (a === 0 && b===0){
+alert('phuong trình có vô vố ngiệm');
+    if (a=0 && b||0){
+alert('phương trình vô nghiệm');
 
-    function giai_pt_bac_nhat(a, b)
-    {
-        if (a == 0 && b == 0){
-            alert('Phương trình vô số nghiệm');
-        }
-        else if (a != 0 && b == 0){
-            alert('Phương trình có nghiệm x = 0');
-        }
-        else if (a == 0 && b != 0){
-            alert("Phương trình vô nghiệm");
-        }
-        else {
-            alert('Phương trình có nghiệm x = ' + (-b/a));
-        }
-    }
+}
+}else {
+
+    alert('phuong trinh có nghiệm duy nhất ') -b/a;
+
+}
+
+
+
 </script>
-
 </body>
 </html>
