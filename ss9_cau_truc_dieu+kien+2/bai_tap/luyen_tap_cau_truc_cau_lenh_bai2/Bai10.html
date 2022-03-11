@@ -7,7 +7,7 @@
 <body>
 <p style="color: red"> bẳng tính tiền điện</p>
 
-<label>KWH</label><input type="text" id="soDien">
+<label>KWW</label><input type="text" id="soDien">
 <button type="button" onclick="tinhTien()">tinh</button>
 <label>số tiền điện</label> <input type="text" id="soTien"><label>vnđ</label>
 
@@ -18,12 +18,17 @@
         let tienDien = parseFloat(document.getElementById('soDien').value);
         let soDien = parseFloat(document.getElementById('soDien').value);
 
-        if (soDien > 0 && soDien <= 50 * 1500) {
+        if (soDien > 0 && soDien <= 50) {
+            document.getElementById('soTien').value = tienDien = 1500 * soDien
 
-        } else if (soDien < 100 * 1700) {
+        } else if (soDien > 50 && soDien < 100) {
 
-        } else if (soDien < 150 * 2000) {
-document.getElementById('soTien').value
+            document.getElementById('soTien').value = tienDien = 1700 * soDien
+
+        } else if (soDien > 100 && soDien < 150) {
+
+
+            document.getElementById('soTien').value = tienDien = 2000 * soDien
         } else if (soDien > 150) {
 
             document.getElementById('soTien').value = 'bị phạt '
