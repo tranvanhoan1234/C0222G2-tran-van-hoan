@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body><script>
+<body>
+<button onclick="choiTiep()">choitiep</button>
+<button onclick="choiLai()">choilai</button>
 
 
+<script>
+
+    function choiTiep() {
+
+        let doanSo = prompt(parseInt('xin nhập số ').value)
+        let soBiMat = 10 + math.round(math.random() * 5);
+
+
+        if (doanSo === soBiMat) {
+            alert('bạn đã đoán đúng bạn dc một cục vàng to bự')
+
+        } else if (doanSo < soBiMat) {
+            alert('bạn đã đoán sai số bạn nhập nhỏ hơn số bí mật')
+        } else {
+            alert('bạn đã đoán sai số bạn nhập lơn hơn số bí mật')
+        }
+
+
+    }
 </script>
 </body>
 </html>

@@ -5,6 +5,24 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let thang = parseInt(prompt("Nhap so thang vay: "));
+    let laiSuat = Number(prompt("Nhap lai suat: "));
+    let tienVay = Number(prompt("Nhap so tien vay: "));
 
+    console.log('Tien vay ban dau: ' + tienVay.toLocaleString());
+
+    let soTienLai = 0;
+
+    for (let i = 1; i <= thang; i++) {
+        console.log('Thang: ' + i);
+
+        soTienLai = tienVay * (laiSuat / 100);
+        console.log('Lai suat: ' + soTienLai.toLocaleString());
+
+        tienVay = tienVay + soTienLai;
+        console.log('Tien vay: ' + tienVay.toLocaleString());
+    }
+</script>
 </body>
 </html>
