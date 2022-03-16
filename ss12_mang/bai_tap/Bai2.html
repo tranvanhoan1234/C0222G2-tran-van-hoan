@@ -7,23 +7,41 @@
 <body>
 <form method="post" action="">
     <h1>google fake</h1>
-    <button type="button" onclick="timKiem">tìm kiếm</button>
-    <input type="text" id="giatri">
+    <input type="text" id="ketQua">
+    <button type="button" onclick="search()">ketqua</button>
+    <label>kết quả tìm kiếm</label> <input type="text" id="a">
     <script>
-        function timKiem() {
-            let ketqQua = document.getElementById('giatri').value;
-            let tiengAnh = ["cat", "doc", "tadle"];
-            let tiengViet = ["meo","chó",];
+        let tiengViet = ["mèo", "chó", "bàn"];
+        let tiengAnh = ["cat", "dog", "table"];
+        let check = false;
 
-            for (let i = 0; i < tiengAnh.length; i++) {
-                if (tiengAnh[i] ===ketqQua)  {
+        function search() {
 
-
+            let ketQua = document.getElementById('ketQua').value
+            let a = document.getElementById('a').value
+            for (let i = 0; i < tiengViet.length; i++) {
+                for (let j = 0; j < tiengAnh.length; j++) {
+                    if (tiengViet[i] === ketQua) {
+                        document.getElementById('a').value = tiengAnh[i];
+                        check = true;
+                        break;
+                    }
                 }
 
-            }
 
+            }
+            if (check == false) {
+                document.getElementById('a').value = 'không tìm thấy'
+
+
+            }
         }
+
+
+        // document.write( tiengViet[i]);
+        // document.write( tiengAnh[i]);
+
+
     </script>
 
 
