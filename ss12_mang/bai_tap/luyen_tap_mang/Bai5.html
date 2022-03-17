@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>Bài 5- Viết chương trình đếm số nguyên âm trong một chuỗi</h4>
+<script>
+
+    let a = "767658jh65-hjgfh6-7jhjkh-564jhgjkyug-765jhg-6ygujht";
+    let count = 0;
+    for (let i = 0; i < a.length; i++) {
+        if (a.charAt(i) === "-") {
+            if (!isNaN(Number(a.charAt(i+1))) === true) {
+              document.write( '-'+ a.charAt(i+1) +'<br>')
+                count++;
+            }
+        }
+    }
+    document.write(   'co ' +count+' số')
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>Bài 7- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần
+    tử số nguyên V. Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã
+    cho xoá V khỏi mảng (Bản chất việc xoá ở đây tức
+    là dịch phần tử ở bên phải V sang vị trí của V, và gán 0 cho phần tử cuối cùng của mảng)</h4>
+
+<script>
+    let a = [20, 10, 34, 32, 12, 37, 73, 39];
+    let b = parseInt(prompt('nhập số nguyên v'));
+
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] === b ) {
+            a.splice(i , 1)
+            alert('b thuộc mảng')
+            a.push(0)
+
+        }console.log(a[i]);
+
+    }
+
+</script>
+</body>
+</html>
