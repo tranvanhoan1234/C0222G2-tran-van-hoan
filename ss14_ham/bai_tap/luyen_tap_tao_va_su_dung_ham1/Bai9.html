@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h5>Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ,
+    kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+    Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
+</h5>
+<script>
+    let dem = 0
+
+    let arr = [1, 2, 3, 4, 5, 1, 1, 2, 3,];
+    let a = prompt("nhap ki tu");
+
+
+    function kiemTra(arr, a) {
+        flag = true
+        for (let i = 0; i < arr.length; i++) {
+
+            if (a == arr[i]) {
+                flag = false;
+                break;
+
+            }
+        }
+        if (flag === false) {
+            for (let i = 0; i < arr.length; i++) {
+                if (a == arr[i]) {
+
+                    dem++
+
+                }
+            }
+            return dem
+
+        } else {
+            return -1;
+        }
+    }
+
+    console.log(kiemTra(arr, a));
+
+
+</script>
 </body>
 </html>

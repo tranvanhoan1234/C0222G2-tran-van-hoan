@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Circle {
+        constructor(radius) {
+            this.Radius = radius;
+
+        }
+
+        getRadius() {
+            return this.Radius;
+
+        }
+
+        setRadius(radius) {
+            this.Radius = radius;
+        }
+
+        getarea(radius) {
+
+            return Math.PI * radius * radius;
+
+        }
+
+    }
+
+    let myDate = new Circle()
+
+    myDate.setRadius(2)
+    let radius = myDate.getRadius()
+    console.log(myDate.getarea(radius))
+    console.log(myDate.getRadius())
+
+</script>
+
+</body>
+</html>

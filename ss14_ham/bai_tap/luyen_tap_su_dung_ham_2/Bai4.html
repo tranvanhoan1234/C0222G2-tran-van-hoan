@@ -2,9 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h5>
+    Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.
+    Nếu là ký tự số hàm trả về true, ngược lại trả về false.
+
+</h5>
+
+<script>
+    let number = parseInt(prompt('nhập  số để kiểm tra'));
+
+    let flag = true;
+
+    function kiemTra(number) {
+        for (let i = 0; i < number.length; i++) {
+            if (!isNaN(number [i])) {
+
+                flag = false;
+
+                break;
+
+
+            }
+        }
+    }
+
+    kiemTra(number)
+    if (flag) {
+        alert("không có kí tự số ");
+
+    } else alert("là kí tự số");
+
+
+</script>
 </body>
 </html>

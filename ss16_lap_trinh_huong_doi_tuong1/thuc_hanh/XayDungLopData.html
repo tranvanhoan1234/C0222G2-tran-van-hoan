@@ -2,9 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    class Date {
+        constructor(ngay, thang, nam) {
+            this.day = ngay;
+            this.month = thang;
+            this.year = nam;
+
+        }
+
+        getday() {
+            return this.day;
+        }
+
+        setday(ngay) {
+            this.day = ngay;
+
+        }
+
+
+        getmonth() {
+
+            return this.month;
+        }
+
+        setmonth(thang) {
+            this.month = thang;
+
+        }
+
+
+        getyear() {
+            return this.year;
+        }
+
+        setyear(nam) {
+            this.year = nam;
+
+
+        }
+
+    }
+
+    let myDate = new Date(2 / 3 / 2021)
+
+     let day=myDate.setday(13);
+     let month=myDate.setmonth(11);
+     let year=myDate.setyear(2001);
+
+    myDate.setyear(1996);
+    alert(myDate.getday()+'/'+myDate.getmonth()+'/'+myDate.getyear());
+    // console.log(myDate.getday());
+    // console.log(myDate.getmonth());
+    // console.log(myDate.getyear());
+
+</script>
 </body>
 </html>

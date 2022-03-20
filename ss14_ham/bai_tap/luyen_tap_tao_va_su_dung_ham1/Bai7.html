@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h5>Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+
+</h5>
+<script>
+    let a = parseInt(prompt('mời bạn nhập vào số nguyên '));
+    let b = parseInt(prompt('mời bạn nhập vào số nguyên '));
+    doiso(a, b);
+    function doiso(a, b) {
+        let c = a;
+        a = b;
+        b = c;
+         return 'a=' + a + 'b=' + b;
+
+    }
+
+console.log(doiso(a,b));
+
+
+</script>
 </body>
 </html>

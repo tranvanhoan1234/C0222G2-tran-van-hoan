@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+
+<h5>Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không.
+    Nếu là nguyên dương trả về true, ngược lại trả về false.</h5>
+<script>
+    let a = prompt('xin mời bạn nhập số');
+
+
+    function kiemTra(a) {
+        if (a > 0) {
+            return true;
+
+        } else if (a < 0) {
+            return false;
+
+        } else if (a == 0) {
+            return "a=0";
+
+        }else {
+
+            return "a không phải là số";
+        }
+    }
+
+    console.log(kiemTra(a));
+
+
+</script>
 </body>
 </html>

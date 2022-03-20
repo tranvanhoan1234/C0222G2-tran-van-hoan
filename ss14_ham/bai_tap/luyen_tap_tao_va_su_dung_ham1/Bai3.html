@@ -9,20 +9,30 @@
     hiển thị hộp thoại thông báo cho người dùng. Nếu giá tri
     của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.</h5>
 <script>
-     let a = parseInt(prompt('tham số 1'))
-     let b = parseInt(prompt('tham số 2'))
+    let a = parseInt(prompt('tham số 1'))
+    let b = parseInt(prompt('tham số 2'))
 
     function compare(a, b) {
 
-        if (a >= b) {
-            // alert('lớn hơn tham số hai')
+        // for (let param of arguments) {
 
-             return (a+b);
+        if (a > b) {
+            let c = a
+            console.log(c + "số a lớn hơn  b");
+        } else {
+            console.log("a nhỏ hơn b")
         }
 
 
+        // }
+
+
     }
-     // console.log(result(compare()))
+
+    compare(a, b);
+
+
+    // console.log(result(compare()))
 
 </script>
 </body>

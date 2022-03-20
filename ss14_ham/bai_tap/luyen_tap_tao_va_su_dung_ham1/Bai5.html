@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<script>
+
+
+    let a = prompt("nhap ten ngoi sao");
+    let star =["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let chofm =["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    function ngoisaone(a) {
+        let flag =true
+        for (let i = 0; i < star.length ; i++) {
+            if (a === star[i]) {
+                flag =  false;
+                break;
+            }
+        }
+        if (flag === false){
+            for (let i = 0; i < star.length ; i++) {
+                if ( a === star[i]){
+                    return chofm[i];
+
+                }
+            }
+        }else {
+           alert(  "ngôi sao này làm gì có");
+        }
+    }
+    alert(ngoisaone(a));
+
+</script>
 </body>
 </html>
