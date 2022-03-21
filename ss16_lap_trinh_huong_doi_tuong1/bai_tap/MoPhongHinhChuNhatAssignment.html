@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rectangle {
+        constructor(ChieuDai, ChieuRong) {
+            this.Length = ChieuDai;
+            this.width = ChieuRong;
+
+        }
+
+        getLength() {
+
+            return this.Length;
+        }
+
+        setLength(ChieuDai) {
+
+            this.Length = ChieuDai;
+        }
+
+        getWidth() {
+            return this.Width;
+
+        }
+
+        setWidth(ChieuRong) {
+            this.Width = ChieuRong;
+
+
+        }
+
+        getDienTich() {
+            return this.Length * this.Width;
+        }
+
+        getChuVi() {
+return  (this.Width + this.Length)  * 2;
+
+        }
+
+    }
+
+    let tinh = new Rectangle(1, 2);
+
+    let s = tinh.getDienTich()
+    let r=tinh.getChuVi()
+    tinh.setWidth();
+    tinh.setLength();
+    chieudai = tinh.setLength(2)
+    chieurong = tinh.setWidth(3)
+    tinh.getDienTich();
+    s = tinh.getDienTich();
+    r =tinh.getChuVi()
+    alert(r+'chuvi')
+    alert(s + 'dien tích');
+
+
+</script>
+</body>
+</html>

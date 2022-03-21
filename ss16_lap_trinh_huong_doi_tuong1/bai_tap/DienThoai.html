@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Dienthoai {
+        constructor() {
+            this.Trangthai = true;
+            this.pin = 100;
+            this.vungnhosoanthoai = "";
+            this.vungnhotindagui = [];
+            this.vungnhotinden = [];
+        }
+
+        getTrangthai() {
+            if (this.getTrangthai) {
+
+                alert('điện thoại đang mở')
+
+            } else {
+                console.log('dienthoai dang tắt');
+
+            }
+
+        }
+
+        battat() {
+            this.Trangthai = !this.Trangthai;
+
+        }
+
+        sacpin() {
+
+            this.pin = 100;
+        }
+
+        soantin(text) {
+
+            this.vungnhosoanthoai = text
+        }
+
+        tinnhan(massenger) {
+
+            this.vungnhosoanthoai = massenger;
+        }
+
+        guitin(mobi, messenger) {
+            this.soantin(messenger);
+            this.vungnhotindagui.push(this.vungnhosoanthoai)
+            mobi.tinnhan(this.vungnhosoanthoai)
+            this.vungnhosoanthoai = "";
+
+        }
+
+        hienthitindagui() {
+            console.log(this.vungnhotindagui);
+
+        }
+
+        hienthitinnhan() {
+
+            console.log(this.vungnhotinden);
+        }
+    }
+
+    let nokia = new Dienthoai();
+    let iphonne = new Dienthoai();
+nokia.guitin(iphonne,"abcc");
+iphonne.hienthitinnhan();
+
+</script>
+</body>
+</html>
