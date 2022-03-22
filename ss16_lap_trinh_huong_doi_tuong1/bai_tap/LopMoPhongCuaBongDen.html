@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--        -->
+
+
+</head>
+<body>
+<button type="button" onclick="HayBatDen()">bật</button>
+<button type="button" onclick="HayTatDen()">tắt</button>
+
+<script>
+    class Den {
+        constructor() {
+            this.trangThai = false;
+        }
+
+        getTrangThai() {
+            return this.trangThai
+        }
+
+        setTrangThai(trangThai) {
+            this.trangThai = trangThai
+
+        }
+
+        batDen() {
+            this.trangThai = true;
+            console.log('dang bật đèn');
+        }
+
+        tatDen() {
+            this.trangThai = false
+            console.log('đang tắt đèn')
+        }
+    }
+
+    class CongTac {
+        constructor() {
+            this.den = null;
+
+        }
+
+        batCongTac() {
+            this.den.batDen()
+
+        }
+
+        tatCongTac() {
+            this.den.tatDen()
+
+
+        }
+
+        knBongDen(den) {
+            this.den = den
+        }
+
+    }
+
+    let bongDen = new Den();
+    let congTac = new CongTac();
+    congTac.knBongDen(bongDen);
+    //  congTac.batCongTac();
+    // congTac.tatCongTac();
+
+
+    function HayBatDen() {
+        congTac.batCongTac()
+
+    }function HayTatDen() {
+        congTac.tatCongTac()
+    }
+
+</script>
+
+<script>
+
+</script>
+</body>
+</html>

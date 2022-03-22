@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    class Battery {
+        constructor() {
+            this.pin = false;// tắt
+        }
+
+        turnoff() {
+            return this.pin = false;
+        }
+
+        turnOn() {
+            return this.pin = true;
+        }
+
+        kttrangthai() {
+            if (this.pin) {
+                alert("den dang sang")
+            } else {
+                alert("den dang tat")
+            }
+        }
+    }
+
+    class flashLamb {
+        constructor(pin) {
+            this.pin = pin;
+
+        }
+
+        Knbongden(energy) {
+            this.pin = energy;
+        }
+
+        closetunoff() {
+            this.pin.turnoff()
+        }
+
+        opentunon() {
+            this.pin.turnOn()
+        }
+
+    }
+
+    let pin = new Battery();
+    let congtac = new flashLamb(pin)
+    pin.kttrangthai();
+    congtac.opentunon(pin);
+    congtac.Knbongden(pin);
+    congtac.closetunoff(pin);
+</script>
+</body>
+</html>

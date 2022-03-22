@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor() {
+
+            this.weigth = 10;
+        }
+
+        decrease() {
+
+            this.weigth > 0;
+            this.weigth--;
+        }
+
+        isEmpty() {
+            if (this.weigth === 0) {
+                console.log('táo đã hết nè')
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+    }
+
+    class Human {
+        constructor(ten, canNang, gioiTinh) {
+            this.name = ten;
+            this.weigth = canNang;
+            this.gender = gioiTinh;
+        }
+
+        setGender() {
+            this.gender = gioiTinh;
+
+        }
+
+        isMale() {
+            if (this.setGender == "Nam") {
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+
+        checkApple(tao) {
+            if (tao) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        eat(quaTao) {
+            if (this.checkApple(quaTao)) {
+                this.weight++;
+                quaTao.decrease();
+            }
+        }
+
+        say(text) {
+            console.log(this.name + " ; " + text);
+
+        }
+
+        getName() {
+            return this.name;
+
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getWeigth() {
+
+            return this.weigth;
+        }
+
+        setWeigth(canNang) {
+            this.weigth = canNang;
+
+        }
+
+    }
+
+    let quatao = new Apple();
+    let eva = new Human("Eva", 50, "NU");
+    let adam = new Human("Adam", 60, "Nam");
+    adam.say('eva em ăn téo k');
+    eva.say('dạ em ngại lắm anh hốc đi');
+    adam.eat(quatao)
+    adam.eat(quatao);
+    adam.eat(quatao);
+    adam.eat(quatao);
+    adam.eat(quatao);
+    console.log('khoi lượng tao' + quatao.weigth);
+    // console.log('khoi lượng adam' + adam.setWeigth);
+    // console.log('khoi lượng eva' + eva.setWeigth);
+
+</script>
+</body>
+</html>
