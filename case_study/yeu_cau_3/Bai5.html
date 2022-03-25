@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tien = 0
+    let chonMon
+while (chonMon!=7){
+    chonMon = parseInt(prompt("1:Cafe \n 2:Cam vắt \n 3:Nước ép cà rốt \n 4:Nước ép cà chua \n 5:Nước lọc \n 6:Nước dừa \n 7:thoat"));
+
+    switch (chonMon) {
+
+        case 1:
+            tien = 10000;
+            soluong = prompt("nhap sl")
+
+            document.write("Gia tien của :" + soluong + " ly cafe la: " + (tien * soluong).toLocaleString() + "<br>");
+            break;
+        case 2:
+            soluong = prompt("nhap sl")
+            tien = 20000;
+            document.write("giá tiền của: "+soluong+"ly cam vắt là "+ (tien * soluong).toLocaleString()+"<br>");
+            break;
+
+        case 3:
+            soluong = prompt("nhap sl")
+            tien = 15000;
+            document.write("giá tiền của :"+soluong + " nước cà rốt "+ (tien * soluong).toLocaleString()+"<br>");
+            break;
+
+        case 4:
+            soluong = prompt("nhap sl")
+            tien = 12000;
+            document.write( (tien * soluong).toLocaleString()+"<br>");
+            break;
+
+        case 5:
+            soluong = prompt("nhap sl")
+            tien = 17500;
+            document.write((tien * soluong).toLocaleString());
+            break;
+
+        case 6:
+            soluong = prompt("nhap sl")
+            tien = 16000;
+            document.write((tien * soluong).toLocaleString());
+            break;
+
+    }
+    }
+
+
+</script>
+</body>
+</html>

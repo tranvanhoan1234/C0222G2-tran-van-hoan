@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let bangTiengAnh = prompt('nhập từ bạn muốn');
+    bangTiengAnh = bangTiengAnh.toLocaleLowerCase();
+
+    switch (bangTiengAnh) {
+        case "a":
+        case "b":
+        case "c":
+        case "d":
+        case "e":
+        case "f":
+        case "j":
+            console.log(bangTiengAnh + "là nguyên âm");
+            break;
+        default:
+            console.log('phụ âm');
+            break;
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt('mời bạn nhập');
+    console.log(a);
+    let b = "";
+    for (let i = 0; i < a.length; i++) {
+        console.log(a[i])
+        switch (a[i]) {
+            case "1":
+                b += 'một '
+                break;
+            case "2":
+                b += 'hai '
+                break;
+            case "3":
+                b += 'ba '
+                break;
+            case "4":
+                b += 'bốn '
+                break;
+            case "5":
+                b += 'năm '
+                break;
+            case "6":
+                b += 'sáu '
+                break;
+            case "7":
+                b += 'bảy '
+                break;
+            case "8":
+                b += 'tám '
+                break;
+            case "9":
+                b += 'chín '
+                break;
+
+
+            default:
+                alert('không có ');
+        }
+    }
+    console.log(b);
+
+
+</script>
+</body>
+</html>

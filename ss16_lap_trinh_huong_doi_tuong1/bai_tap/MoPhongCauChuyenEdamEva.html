@@ -36,9 +36,12 @@
             this.gender = gioiTinh;
         }
 
-        setGender() {
+        setGender(gioiTinh) {
             this.gender = gioiTinh;
 
+        }getGender(){
+
+            return this.gender;
         }
 
         isMale() {
@@ -94,6 +97,7 @@
     let quatao = new Apple();
     let eva = new Human("Eva", 50, "NU");
     let adam = new Human("Adam", 60, "Nam");
+
     adam.say('eva em ăn téo k');
     eva.say('dạ em ngại lắm anh hốc đi');
     adam.eat(quatao)
@@ -102,7 +106,7 @@
     adam.eat(quatao);
     adam.eat(quatao);
     console.log('khoi lượng tao' + quatao.weigth);
-    // console.log('khoi lượng adam' + adam.setWeigth);
+     console.log('khoi lượng adam' + adam.setWeigth);
     // console.log('khoi lượng eva' + eva.setWeigth);
 
 </script>
