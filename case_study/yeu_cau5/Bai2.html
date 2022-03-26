@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 2: Viết hàm liệt kê các số nguyên tố trong mảng 2 chiều, đếm các số nguyên tố có trong mảng đó.-->
+<script>
+    let a = [[2, 3, 5, 7, 8], [1, 2, 5, 7, 8]];
+    let count = 0;
+    for (let i = 0; i < a.length; i++) {
+        for (let j = 0; j < a[i].length; j++) {
+            if (soNguyenTo(a[i][j])) {
+                count++;
+            }
+        }
+    }
+    console.log(count)
+
+    function soNguyenTo(number) {
+        let flag = true;
+
+        if (number < 2) {
+            flag = false;
+        } else if (number >= 2) {
+            if (number === 2) {
+                flag = true;
+            } else if (number >= 3) {
+                if (number === 3) {
+                    flag = true;
+                } else if (number > 3) {
+                    if (number % 2 === 0) {
+                        flag = false;
+                    } else if (number % 3 === 0) {
+                        flag = false;
+                    } else {
+                        flag = true;
+                    }
+                }
+            }
+        }
+        if (flag) {
+            console.log(number+" là số nguyên tố")
+            return true;
+        } else {
+            console.log(number+" không phải số nguyên tố" )
+            return false;
+
+        }
+    }
+
+</script>
+</body>
+</html>

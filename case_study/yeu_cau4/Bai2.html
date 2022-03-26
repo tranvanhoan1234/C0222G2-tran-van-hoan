@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = "abcabccsd0;0/nnnno";
+    let arr = a.split("");
+
+    function demKyTu() {
+        let dem = 0;
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {   // nếu phần tử mảng arr
+                    arr[i] = " ";
+
+
+                    break;
+                }
+            }
+        }
+        for (let k = 0; k < a.length; k++) {
+            if (arr[k] != " ") {
+
+                dem++
+            }
+        }
+        return dem;
+    }
+    alert(demKyTu(a));
+
+
+</script>
+</body>
+</html>

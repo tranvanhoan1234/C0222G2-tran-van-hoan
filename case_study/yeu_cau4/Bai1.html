@@ -5,6 +5,53 @@
     <title>Title</title>
 </head>
 <body>
+<h5>Bài 1: Viết một hàm chuẩn hóa xâu ký tự: biến đổi xâu ký tự thành xâu sao cho trong xâu
+    không có 2 dấu cách liền nhau và bắt đầu mỗi từ phải in hoa. Ví dụ tRuong TaN HAI
+    => Truong Tan Hai.</h5>
 
+
+<script>
+    let str = prompt("Nhap chuoi can chuan hoa")
+
+
+    function chuyenHoaKyTu(str) {
+        let b = [];
+        let a = [];
+        str = str.toLowerCase()
+        a = str.split(" ") // split chuyển chuỗi thành mảng
+        console.log(a)
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] != "") {
+                b.push(a[i]);
+            }
+        }
+        for (let i = 0; i < b.length; i++) {
+            b[i] = b[i][0].toUpperCase() + b[i].substring(1);
+        }
+        return b.join(" ");// chuyển mảng thành 1 chuỗi có thể thêm thay đổi khoảng cách giữa các kí tự
+    }
+
+    function timChuoiLonNhat(str) {
+        let arr = chuyenHoaKyTu(str).split(" ");
+        let max = arr[0].length;
+        let maxStr = arr[0];
+
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i].length > max) {
+                max = arr[i].length;
+                maxStr = arr[i];
+            }
+        }
+
+        return maxStr;
+    }
+
+    function main() {
+        console.log(str + " => " + chuyenHoaKyTu(str));
+        console.log("Max: " + timChuoiLonNhat(str));
+    }
+
+    main();
+</script>
 </body>
 </html>
