@@ -6,20 +6,34 @@
 </head>
 <body>
 <script>
-   function daoMang(){
+    let heligh = parseInt(prompt("nhap vào chiều cao"));
+    let width = heligh * 2 - 1;
+    let s = "";
+    for (let i = 1; i <= heligh; i++) {
 
-   }
+        for (let j = 0; j < width / 2 - i; j++) {
 
-    let array =[1,2,3];
-    let array2 =[4,5];
-    // không return
-    // array.reverse();
-    // alert(array);
-   // cosreturn
-    let array3= array.concat(array2)
+            s += "&nbsp&nbsp"
+        }
+        for (let k = 0; k < i * 2 - 1; k++) {
+            s += "*"
+            console.log(k)
+        }
+        s += "<br>"
+    }
+    document.write(s)
+    document.write("<br>");
+    let heligh = parseInt(prompt("nhap vào chiều cao"));
+    let width = 6;
+    for (let i = 1; i <= heligh; i++) {
+        for (let j = 0; j <=x ; j++) {
 
-    // alert(array);
-    alert(array3);
+        }
+
+
+
+    }
+
 </script>
 </body>
 </html>

@@ -7,17 +7,24 @@
 <body>
 <script>
 
-    let x = 4;
-    let y = 5;
-    for (let i = 0; i < x; i++) {
-        for (let j = 0; j < y; j++) {
-            if (i === 0 || i === x - 1 || j === 0 || j === y - 1) {
-                document.write("*");
-            } else {
-                document.write("&nbsp&nbsp");
-            }
-        }
-        document.write("<br>");
+    // * * * * *
+    // *       *
+    // *       *
+    // * * * * *
+
+
+    let x = 5;
+    let y = 4;
+    for (let i = 0; i < x; i++) {          // chieu cao
+        for (let j = 0; j < y; j++) {    // chieu rong
+            if (i === 0 || i === x -1 || j === 0 || j === y - 1) {
+console.log(y,j)
+                 document.write("*");  // in sao
+             } else {
+                 document.write("&nbsp&nbsp"); // in khoang trang
+             }
+         }
+          document.write("<br>");
     }
 
 
